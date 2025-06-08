@@ -4,6 +4,7 @@ import Home from "../src/pages/Home";
 import Courses from "../src/pages/Courses";
 import CourseDetails from "../src/pages/CourseDetails";
 import News from "../src/pages/Register";
+import Register from "../src/pages/Register";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="courses" element={<Courses />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
           <Route path="/news" element={<News />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="./pages/Register.jsx" element={<Register />} />
         </Routes>
       </div>
     </Router>

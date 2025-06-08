@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import Home from "../pages/Home";
 
 function NavigationBar() {
   return (
@@ -9,19 +10,19 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <LinkContainer to="/src/pages/Home.jsx">
+            <LinkContainer to="/Home">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="../data/courses.js">
+            <LinkContainer to="/Courses">
               <Nav.Link>Courses</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="../data/news.js">
+            <LinkContainer to="/News">
               <Nav.Link>News</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="../pages/Register.jsx">
+            <LinkContainer to="/Register">
               <Nav.Link>Register</Nav.Link>
             </LinkContainer>
           </Nav>

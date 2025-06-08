@@ -15,7 +15,7 @@ function Register() {
     if (name && email && courseId) {
       addRegistration({ name, email, courseId: parseInt(courseId) });
       alert("Registered!");
-      navigate("../pages/Home.jsx"); //kolla denna vägen
+      navigate("/src/pages/Home.jsx"); //kolla denna vägen
     } else {
       alert("Fill in all the details.");
     }
