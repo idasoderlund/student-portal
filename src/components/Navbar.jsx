@@ -10,19 +10,19 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <LinkContainer to="/Home">
+            <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/Courses">
+            <LinkContainer to="/courses">
               <Nav.Link>Courses</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/News">
+            <LinkContainer to="/news">
               <Nav.Link>News</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/Register">
+            <LinkContainer to="/register">
               <Nav.Link>Register</Nav.Link>
             </LinkContainer>
           </Nav>
