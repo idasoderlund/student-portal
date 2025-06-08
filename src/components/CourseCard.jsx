@@ -7,7 +7,7 @@ function CourseCard({ course }) {
       <Card.Body>
         <Card.Title>{course.name}</Card.Title>
         <Card.Text>{course.description}</Card.Text>
-        <Link to={`/src/data/courses.js/${course.id}`}>
+        <Link to={`/courses/${course.id}`}>
           <Button variant="primary">Show more</Button>
         </Link>
       </Card.Body>
