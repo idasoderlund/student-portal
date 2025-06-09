@@ -1,4 +1,4 @@
-export const news = [
+export const newsArray = [
   {
     id: 1,
     title: "New Course in React- Launching the 1st of September!",

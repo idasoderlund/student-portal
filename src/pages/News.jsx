@@ -1,5 +1,5 @@
 import React from "react";
-import { news } from "../data/news";
+import { newsArray } from "../data/news";
 import NewsPost from "../components/NewsPost";
 import "../src/index.css";
 import "../src/app.css";
@@ -22,7 +22,7 @@ function News() {
       >
         News
       </h2>
-      {news.map((post) => (
+      {newsArray.map((post) => (
         <NewsPost key={post.id} post={post} />
       ))}
     </>
