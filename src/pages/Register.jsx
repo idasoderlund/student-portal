@@ -22,58 +22,74 @@ function Register() {
   };
 
   return (
-    <Box
-      sx={{
-        maxWidth: 400,
-        margin: "auto",
-        mt: 4,
-        p: 2,
-        border: "1px solid #ccc",
-        borderRadius: 2,
-        backgroundColor: "#D1D8BE",
-      }}
-    >
-      <Typography variant="h5" gutterBottom>
-        Register yourself
-      </Typography>
-      <TextField
-        label="Name"
-        fullWidth
-        margin="normal"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <TextField
-        label="Email"
-        fullWidth
-        margin="normal"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <TextField
-        select
-        label="Choose course"
-        fullWidth
-        margin="normal"
-        value={courseId}
-        onChange={(e) => setCourseId(e.target.value)}
+    <>
+      <h2
+        style={{
+          fontFamily: "'Poiret One', sans-serif",
+          fontSize: "40px",
+          fontWeight: "900",
+          display: "flex",
+          justifyContent: "center",
+          textAlign: "center",
+          textDecoration: "underline dotted",
+          color: "#fff",
+        }}
       >
-        {courses.map((course) => (
-          <MenuItem key={course.id} value={course.id}>
-            {course.name}
-          </MenuItem>
-        ))}
-      </TextField>
-      <Button
-        variant="contained"
-        color="primary"
-        fullWidth
-        onClick={handleSubmit}
-        sx={{ mt: 2 }}
+        Registration
+      </h2>
+      <Box
+        sx={{
+          maxWidth: 400,
+          margin: "auto",
+          mt: 4,
+          p: 2,
+          border: "1px solid #ccc",
+          borderRadius: 2,
+          backgroundColor: "rgba(209, 216, 190, 0.4)",
+        }}
       >
-        Register
-      </Button>
-    </Box>
+        <Typography variant="h5" gutterBottom>
+          Register yourself
+        </Typography>
+        <TextField
+          label="Name"
+          fullWidth
+          margin="normal"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <TextField
+          label="Email"
+          fullWidth
+          margin="normal"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <TextField
+          select
+          label="Choose course"
+          fullWidth
+          margin="normal"
+          value={courseId}
+          onChange={(e) => setCourseId(e.target.value)}
+        >
+          {courses.map((course) => (
+            <MenuItem key={course.id} value={course.id}>
+              {course.name}
+            </MenuItem>
+          ))}
+        </TextField>
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          onClick={handleSubmit}
+          sx={{ mt: 2 }}
+        >
+          Register
+        </Button>
+      </Box>
+    </>
   );
 }
 export default Register;

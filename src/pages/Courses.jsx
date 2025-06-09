@@ -15,6 +15,7 @@ function Courses() {
           justifyContent: "center",
           textAlign: "center",
           textDecoration: "underline dotted",
+          color: "#fff",
         }}
       >
         {" "}
