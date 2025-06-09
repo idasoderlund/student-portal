@@ -17,6 +17,7 @@ function News() {
           textAlign: "center",
           textDecoration: "underline dotted",
           color: "#EEEFE0",
+          zIndex: 10,
         }}
       >
         News
