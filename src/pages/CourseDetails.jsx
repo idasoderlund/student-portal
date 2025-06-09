@@ -12,6 +12,10 @@ function CourseDetails() {
     fontSize: "40px",
     color: "#EEEFE0",
     marginBottom: "20px",
+    textDecoration: "underline dotted",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   };
 
   const detailStyle = {
