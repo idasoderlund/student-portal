@@ -1,8 +1,6 @@
 import React from "react";
 import { newsArray } from "../data/news";
 import NewsPost from "../components/NewsPost";
-import "../src/index.css";
-import "../src/app.css";
 
 function News() {
   return (
