@@ -27,12 +27,12 @@ function Register() {
         style={{
           fontFamily: "'Poiret One', sans-serif",
           fontSize: "40px",
-          fontWeight: "900",
+          fontWeight: 900,
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
           textDecoration: "underline dotted",
-          color: "#fff",
+          color: "#EEEFE0",
         }}
       >
         Registration
@@ -45,10 +45,22 @@ function Register() {
           p: 2,
           border: "1px solid #ccc",
           borderRadius: 2,
-          backgroundColor: "rgba(209, 216, 190, 0.4)",
+          background: "rgba(255, 255, 255, 0.3)",
         }}
       >
-        <Typography variant="h5" gutterBottom>
+        <Typography
+          variant="h5"
+          style={{
+            color: "#6f826a",
+            fontFamily: "'Poiret One', sans-serif",
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            fontWeight: 900,
+            fontSize: "38px",
+          }}
+          gutterBottom
+        >
           Register yourself
         </Typography>
         <TextField
