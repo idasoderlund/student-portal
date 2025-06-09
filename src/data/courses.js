@@ -36,8 +36,8 @@ export const courses = [
   },
   {
     id: 6,
-    name: " 5",
-    description: "More advanced deeping in the English vocabulay",
+    name: " English 6",
+    description: "Very advanced deeping in the English vocabulary.",
     details:
       "Improve your knowledges in English. The course focus on fiction and factual texts.",
   },
@@ -51,7 +51,7 @@ export const courses = [
   {
     id: 8,
     name: "Buisiness Economics 2",
-    description: "More advanced deeping in the Buisiness Economics",
+    description: "More advanced deeping in the Buisiness Economics.",
     details:
       "Improve your knowledges in buisiness economics. The course includes financial managemant.",
   },

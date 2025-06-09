@@ -21,7 +21,7 @@ export const news = [
   },
   {
     id: 5,
-    title: "Yearly Cleaning day is round the corner!",
-    body: "As you all know we have a yearly cleaning day. We are happy to tell you that the 1st of july are now scheduled for cleaning day here in school. All students will get there cleaning tools from Janitor Ben in the morning in each classroom. All the lockers should be shining clean at 13.30, after that - we teatchers will offer everyone lunch at the baseball plan. Burgers will be served and the weather will be warm!",
+    title: "Yearly Cleaning day is just around the corner!",
+    body: "As you all know we have a yearly cleaning day. We are happy to tell you that the 1st of july are now scheduled for cleaning day here in school. All students will get there cleaning tools from Janitor Ben in the morning in each classroom. All the lockers should be shining clean at 13.30, after that - we teatchers will offer everyone lunch at the baseball field. Burgers will be served and the weather will be warm!",
   },
 ];

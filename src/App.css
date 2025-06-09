@@ -1,4 +1,4 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,24 @@
 
 .read-the-docs {
   color: #888;
+}*/
+
+.nav-link {
+  transition: background-color 0.3s;
+  transform: scale(1);
+}
+
+.nav-link:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.course-card {
+  transition: background-color 0.3s;
+  transform: scale(1);
+}
+
+.course-card:hover {
+  background-color: #40534c;
+  transform: scale(1.2);
 }

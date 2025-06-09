@@ -15,7 +15,7 @@ function Register() {
     if (name && email && courseId) {
       addRegistration({ name, email, courseId: parseInt(courseId) });
       alert("Registered!");
-      navigate("/"); //kolla denna vägen
+      navigate("/");
     } else {
       alert("Fill in all the details.");
     }
@@ -30,10 +30,11 @@ function Register() {
         p: 2,
         border: "1px solid #ccc",
         borderRadius: 2,
+        backgroundColor: "#D1D8BE",
       }}
     >
       <Typography variant="h5" gutterBottom>
-        Register yourself.
+        Register yourself
       </Typography>
       <TextField
         label="Name"
@@ -70,7 +71,7 @@ function Register() {
         onClick={handleSubmit}
         sx={{ mt: 2 }}
       >
-        Register:
+        Register
       </Button>
     </Box>
   );

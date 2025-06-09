@@ -6,7 +6,20 @@ import { Link } from "react-router-dom";
 function Courses() {
   return (
     <>
-      <h2> Courses</h2>
+      <h2
+        style={{
+          fontFamily: "'Poiret One', sans-serif",
+          fontSize: "40px",
+          fontWeight: "900",
+          display: "flex",
+          justifyContent: "center",
+          textAlign: "center",
+          textDecoration: "underline dotted",
+        }}
+      >
+        {" "}
+        Courses
+      </h2>
       <Row>
         {courses.map((course) => (
           <Col md={4} key={course.id} className="mb-3">

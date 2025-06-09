@@ -3,7 +3,7 @@ import Navbar from "../src/components/Navbar";
 import Home from "../src/pages/Home";
 import Courses from "../src/pages/Courses";
 import CourseDetails from "../src/pages/CourseDetails";
-import News from "../src/pages/Register";
+import News from "../src/components/News";
 import Register from "../src/pages/Register";
 
 function App() {
