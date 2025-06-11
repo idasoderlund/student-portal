@@ -104,52 +104,51 @@ function NavigationBar() {
               Registration
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-
-        <div
-          className="responsiveMenu"
-          onClick={toggleMobileMenu}
-          aria-label="toggle menu"
-          aria-expanded={isMobileMenuOpen}
-          role="button"
-        >
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-
-        {isMobileMenuOpen && (
-          <div className="mobile-menu">
-            <Link
-              to="/"
-              className="mobile-link"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/courses"
-              className="mobile-link"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Courses
-            </Link>
-            <Link
-              to="/news"
-              className="mobile-link"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              News
-            </Link>
-            <Link
-              to="/register"
-              className="mobile-link"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Registration
-            </Link>
+          <div
+            className="responsiveMenu"
+            onClick={toggleMobileMenu}
+            aria-label="toggle menu"
+            aria-expanded={isMobileMenuOpen}
+            role="button"
+          >
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
           </div>
-        )}
+
+          {isMobileMenuOpen && (
+            <div className="mobile-menu">
+              <Link
+                to="/"
+                className="mobile-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/courses"
+                className="mobile-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Courses
+              </Link>
+              <Link
+                to="/news"
+                className="mobile-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                News
+              </Link>
+              <Link
+                to="/register"
+                className="mobile-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Registration
+              </Link>
+            </div>
+          )}
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
