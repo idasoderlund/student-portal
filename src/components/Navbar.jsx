@@ -1,14 +1,18 @@
+import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Home from "../pages/Home";
 import "../App.css";
 
 function NavigationBar() {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <Navbar
-      classNamestyle="navbar-container"
-      style={{ backgroundColor: "#EEEFE0" }}
-    >
+    <Navbar className="navbar-container" style={{ backgroundColor: "#EEEFE0" }}>
       <Container>
         <Navbar.Brand
           style={{
@@ -20,8 +24,8 @@ function NavigationBar() {
         >
           Student Portal
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+
+        <Navbar.Collapse className="desktop-nav">
           <Nav
             className="nav-links-container"
             style={{
@@ -97,10 +101,55 @@ function NavigationBar() {
                 boxShadow: "2px 4px 8px rgba(0,0,0,0.7)",
               }}
             >
-              Registering
+              Registration
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+
+        <div
+          className="responsiveMenu"
+          onClick={toggleMobileMenu}
+          aria-label="toggle menu"
+          aria-expanded={isMobileMenuOpen}
+          role="button"
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
+        {isMobileMenuOpen && (
+          <div className="mobile-menu">
+            <Link
+              to="/"
+              className="mobile-link"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="/courses"
+              className="mobile-link"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Courses
+            </Link>
+            <Link
+              to="/news"
+              className="mobile-link"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              News
+            </Link>
+            <Link
+              to="/register"
+              className="mobile-link"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Registration
+            </Link>
+          </div>
+        )}
       </Container>
     </Navbar>
   );
