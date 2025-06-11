@@ -5,7 +5,10 @@ import "../App.css";
 
 function NavigationBar() {
   return (
-    <Navbar style={{ backgroundColor: "#EEEFE0" }}>
+    <Navbar
+      classNamestyle="navbar-container"
+      style={{ backgroundColor: "#EEEFE0" }}
+    >
       <Container>
         <Navbar.Brand
           style={{
@@ -20,6 +23,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
+            className="nav-links-container"
             style={{
               display: "flex",
               justifyContent: "space-around",
@@ -29,7 +33,7 @@ function NavigationBar() {
             <Nav.Link
               to="/"
               as={Link}
-              className="nav-link"
+              className="nav-link1"
               style={{
                 fontFamily: "'Poiret One', sans-serif",
                 fontSize: "20px",
@@ -48,7 +52,7 @@ function NavigationBar() {
             <Nav.Link
               to="/courses"
               as={Link}
-              className="nav-link"
+              className="nav-link2"
               style={{
                 fontFamily: "'Poiret One', sans-serif",
                 fontSize: "20px",
@@ -64,7 +68,7 @@ function NavigationBar() {
 
             <Nav.Link
               as={Link}
-              className="nav-link"
+              className="nav-link3"
               to="/news"
               style={{
                 fontSize: "20px",
@@ -82,7 +86,7 @@ function NavigationBar() {
             <Nav.Link
               as={Link}
               to="/register"
-              className="nav-link"
+              className="nav-link4"
               style={{
                 fontSize: "20px",
                 fontFamily: "'Poiret One', sans-serif",
@@ -93,7 +97,7 @@ function NavigationBar() {
                 boxShadow: "2px 4px 8px rgba(0,0,0,0.7)",
               }}
             >
-              Register
+              Registering
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
