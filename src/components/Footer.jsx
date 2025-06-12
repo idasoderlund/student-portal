@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
         color: "#6f826a",
         backgroundColor: "#D1D8BE",
         paddingTop: "25px",
-        marginTop: "0",
+        marginTop: "200px",
         marginBottom: "0",
         alignSelf: "flex-end",
       }}
@@ -31,4 +31,4 @@ function Footer() {
     </div>
   );
 }
-export default Footer;
+export default Footer;*/

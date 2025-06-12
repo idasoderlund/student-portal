@@ -1,19 +1,21 @@
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     max-width: 100%;
+    margin-top: 90px;
   }
 }
 
 .footer-container {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60px;
-}
+  margin-top: 40px;
+}*/

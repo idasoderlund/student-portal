@@ -5,7 +5,7 @@ import Courses from "../src/pages/Courses";
 import CourseDetails from "../src/pages/CourseDetails";
 import News from "../src/pages/News";
 import Register from "../src/pages/Register";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>
-      <Footer />
     </Router>
   );
 }

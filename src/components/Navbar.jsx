@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Home from "../pages/Home";
 import "../App.css";
+import CourseCart from "./CourseCart";
 
 function NavigationBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -163,6 +164,9 @@ function NavigationBar() {
               </Link>
             </div>
           )}
+          <div style={{ marginRight: "20px" }}>
+            <CourseCart />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
