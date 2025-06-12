@@ -11,8 +11,10 @@ function Footer() {
         width: "100%",
         color: "#6f826a",
         backgroundColor: "#D1D8BE",
-        marginTop: "195px",
         paddingTop: "25px",
+        marginTop: "0",
+        marginBottom: "0",
+        alignSelf: "flex-end",
       }}
     >
       <p style={{ gridColumn: "1", marginLeft: "120px" }}>

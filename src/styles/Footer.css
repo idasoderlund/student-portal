@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
