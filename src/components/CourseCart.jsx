@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { registrationContext } from "./RegisterForm";
 import { FaShoppingCart } from "react-icons/fa";
 import { ListGroup, Badge } from "react-bootstrap";
+import { courses } from "../data/courses";
 
 function CourseCart() {
   const { registrations } = useContext(registrationContext);
@@ -13,7 +14,7 @@ function CourseCart() {
 
   const registeredCourses = uniqueCourseId
     .map((id) => {
-      const course = course.find((c) => c.id === id);
+      const course = courses.find((c) => c.id === id);
       return course;
     })
     .filter(Boolean);

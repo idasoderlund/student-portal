@@ -106,10 +106,8 @@
     position: fixed;
     top: 0;
     left: 50%;
-
     margin-left: 0;
     transform: translateX(-80%) translateY(70%);
-
     width: 100%;
     z-index: 9999;
   }
