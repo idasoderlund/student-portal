@@ -98,3 +98,25 @@
     margin-left: 137px;
   }
 }
+
+@media (max-width: 768px) {
+  .placement-div {
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+    margin-left: 0;
+    transform: translateX(-80%) translateY(70%);
+
+    width: 100%;
+    z-index: 9999;
+  }
+}
+
+@media (min-width: 769px) {
+  .placement-div {
+    margin-left: 170px;
+  }
+}

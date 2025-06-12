@@ -23,13 +23,30 @@ function CourseCart() {
   };
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
-      <FaShoppingCart
-        size={30}
-        style={{ cursor: "pointer", color: "#6f826a" }}
-        onClick={toggleDropDown}
-        title="My courses"
-      />
+    <div
+      style={{
+        position: "relative",
+        display: "inline-block",
+      }}
+    >
+      <div
+        className="placement-div"
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+        }}
+      >
+        <FaShoppingCart
+          size={30}
+          style={{
+            cursor: "pointer",
+            color: "#6f826a",
+          }}
+          onClick={toggleDropDown}
+          title="My courses"
+        />
+      </div>
+
       {showDropdown && (
         <div
           style={{
