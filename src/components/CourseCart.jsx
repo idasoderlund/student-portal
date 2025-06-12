@@ -76,7 +76,7 @@ function CourseCart() {
               marginLeft: "40px",
             }}
           >
-            Registered courses
+            REGISTERED COURSES:
           </h5>
           {registeredCourses.length === 0 ? (
             <p
