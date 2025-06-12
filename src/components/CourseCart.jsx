@@ -26,7 +26,7 @@ function CourseCart() {
     <div style={{ position: "relative", display: "inline-block" }}>
       <FaShoppingCart
         size={30}
-        style={{ cursor: "pointer" }}
+        style={{ cursor: "pointer", color: "#6f826a" }}
         onClick={toggleDropDown}
         title="My courses"
       />
