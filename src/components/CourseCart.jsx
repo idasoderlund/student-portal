@@ -35,6 +35,7 @@ function CourseCart() {
         style={{
           display: "flex",
           justifyContent: "flex-end",
+          position: "sticky",
         }}
       >
         <FaShoppingCart
